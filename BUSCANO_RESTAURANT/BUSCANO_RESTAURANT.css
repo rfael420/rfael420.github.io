@@ -1,0 +1,127 @@
+/* Background styling */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Header and guide text */
+  .title-highlight {
+    color: #c7d328;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    font-family: monospace;
+  }
+  
+  .margin{
+    margin-top: 10rem;
+  }
+
+  .details-margin{
+    margin-top: 12rem;
+  }
+
+  .restaurant-guide {
+    color: #e9eef3;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+  
+  /* Main Menu Button */
+  #mainMenuButton {
+    position: relative;
+  }
+  
+  /* Center the card row */
+  #restaurant-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Card styling */
+  .restaurant-card {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 250px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .restaurant-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .card{
+    width: 260px;
+    height: 420px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    background: #FFFFFF;
+    color: #333;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .restaurant-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Details Section */
+  .detail-box {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+  }
+  
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 1.2rem;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(255, 193, 7, 0.8);
+  }
+  
+  /* Hide and Show Effects */
+  #restaurant-details {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    display: none;
+    z-index: 10;
+  }
+  
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(30px); /* Centered and slides up */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+  
+  /* Apply animation when showing details */
+  #restaurant-details.show {
+    animation: fadeInUp 0.5s ease-out;
+  }
