@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="BUSCANO_RESTAURANT.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="display-3 fw-bold text-uppercase title-highlight">Best of Meridien</h1>
+        <h2 class="restaurant-guide">Restaurant Guide</h2>
+
+      
+    <!-- Top Row: Main Menu Button -->
+  <div class="container">
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-warning" id="mainMenuButton" onclick="hideDetails()">Main Menu</button>
+    </div>
+  </div>
+    
+  
+    <div class="container margin" id="restaurant-list">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card restaurant-card" data-name="Fresh Lumpia">
+                    <img src="lumpia.jpg" class="card-img-top" alt="Gabel Loffel">
+                    <div class="card-body text-center bg-warning">
+                        <h5 class="card-title">FRESH LUMPIA</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card restaurant-card" data-name="Lechon">
+                    <img src="lechon.JPG" class="card-img-top" alt="Gary Gari">
+                    <div class="card-body text-center bg-warning">
+                        <h5 class="card-title">LECHON</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card restaurant-card" data-name="Kare Kare">
+                    <img src="karekare.jpg" class="card-img-top" alt="Il Piatto">
+                    <div class="card-body text-center bg-warning">
+                        <h5 class="card-title">KARE KARE</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card restaurant-card" data-name="Crispy Pata">
+                    <img src="crispypata.jpg" class="card-img-top" alt="Pierre Platters">
+                    <div class="card-body text-center bg-warning">
+                        <h5 class="card-title">CRISPY PATA</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container details-margin" id="restaurant-details" style="display: none;">
+        <div id="details-content"></div>
+    </div>
+
+    <script src="BUSCANO_RESTAURANT.js"></script>
+</body>
+</html>
